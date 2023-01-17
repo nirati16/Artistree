@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Sign up </title>
+        <link href="./sellerform.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="sellerform.js"></script>
+    </head>
+
+    <body>
+        <h3>Popup Form</h3>
+        <div class="openBtn">
+        <button class="openButton" onclick="openForm()"><strong>Open Form</strong></button>
+        </div>
+        <div class="loginPopup">
+            <div class="formPopup" id="popupForm">
+                <button class="btn" onclick="closeForm()">X</button>
+                <center>
+                    <h2>Hello Seller</h2>
+                    <form action="sellerform.php" class="formContainer">
+                
+                    <table>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="sname">Name: </label>
+                            </td>
+                            <td style="width:500px">
+                                <input type="text" id="sname" name="sname" placeholder="Type Your Name" size="50" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="add">Address: </label>
+                            </td>
+                            <td style="width:500px">
+                                <input type="text" id="add" name="add" placeholder="Fill Your Address" size="50" required>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <table>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="city">Adhaar Nmber: </label>
+                                <input type="text" id="adhaar" name="adhaar" placeholder="Adhaar Number" required>
+                            </td>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="num">Contact Number: </label>
+                                <input type="tel" id="num" name="num" placeholder="Number" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="city">City: </label>
+                                <input type="text" id="city" name="city" placeholder="City" required>
+                            </td>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="state">State: </label>
+                                <input type="text" id="state" name="state" placeholder="State" required>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="code">Code: </label>
+                                <input type="text" id="code" name="code" placeholder="Pincode" required>
+                            </td>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="pname">Product Name: </label>
+                                <input type="text" id="pname" name="pname" placeholder="Product Name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="size">Size(if applicable): </label>
+                                <input type="text" id="size" name="size" placeholder="Product Size">
+                            </td>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="price">Product Price: </label>
+                                <input type="text" id="price" name="price" placeholder="Product Price" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: center;vertical-align: middle;">
+                                <label for="category">Select Category:</label>
+                            </td>
+                            <td style="text-align: center; vertical-align: middle;"">
+                                <select name="category">
+                                    <option value="Cothing">Clothing</option>
+                                    <option value="Accessories">Accessories</option>
+                                    <option value="Homedecor">Home Decor</option>
+                                    <option value="Handicrafts">Handicrafts</option>
+                                    <option value="Grafitti">Grafitti Arts</option>
+                                    <option value="Others">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <label for="dim">Dimensions: </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="len" name="len" placeholder="Length ">
+                            </td>
+                            <td>
+                                <input type="text" id="wid" name="wid" placeholder="Width ">
+                            </td>
+                            <td>
+                                <input type="text" id="height" name="height" placeholder="Height">
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    
+                    
+                    <table>
+                        <tr>
+                            <td colspan="">
+                                <label for="img" class="required">Image </label><br>
+                                <input type="file" id="img" name="img" required>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><input type="submit" name="submit" value="Submit" /></td>
+                            <td><input type="reset" name="reset" value="Reset" /></td>
+                        </tr>
+                    </table>
+                    
+                </form>
+                </center>
+            </div>
+        </div>
+    </body>
+</html>

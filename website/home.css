@@ -1,0 +1,528 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* back to top btn */
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #d640d6;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    float: left;
+}
+  
+#top-btn:hover {
+    background-color: white;
+    color: #d640d6;
+}  
+
+/* nav bar */
+.header{
+    display: flex;
+    width: 100%;
+    background-color:#ffcaff;
+    height: 60px;
+    justify-content: space-between;
+    position: fixed;
+}
+.logo{
+    margin: 10px;
+    margin-left: 25px;
+}
+.logo>a{
+    text-decoration: none;
+    color: black;
+}
+.logo>a:hover{
+    color: white;
+    text-decoration: none;
+}
+.search_bar{
+    border-radius: 25px;
+    height: 20px;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 228px;
+    /* text-align: center; */
+    margin-top: 15px;
+}
+.allFilters {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+}
+.allFilters-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.allFilters-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.allFilters-content a:hover {
+    background-color: #ffcaff;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.allFilters:hover .allFilters-content {
+    display: block;
+}
+.allFilters:hover .allFiltersbtn {
+    background-color: #c7d0d8;
+}
+.nav_right2{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    margin-top: 15px;
+}
+#search_icon{
+    cursor: pointer;
+}
+#profile_icon{
+    cursor: pointer;
+    margin-right: 20px;
+}
+#join-us{
+    background-color:#f9f9f9;
+    border:none;
+}
+#join-us:hover{
+    background-color: #ffcaff;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#login_icon{
+    cursor: pointer;
+}
+
+/* banner */
+.banner{
+    height: 84vh;
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    margin: 150px;
+}
+.main_heading{
+    margin: 10px;
+    font-size: 70px;
+}
+.sub_heading{
+    margin: 0px 20px 10px 10px;
+    font-size: 25px;
+}
+.banner_para{
+    font-size: 19px;
+    margin:10px;
+}
+.banner_image{
+    margin-top: 80px;
+    margin-right: 20px;
+}
+
+/* categories */
+.categories_heading{
+    text-align: center;
+    font-size: 50px;
+}
+.categories{
+    background-color: #ffcaff;
+    margin-top: 30px;
+}
+.categories_row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.category{
+    background-color:#d4d2d3;
+    margin: 70px 70px 10px 70px;
+    width: 40%;
+}
+.category a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.category a:hover{
+    color: white;
+    text-decoration:none;
+    
+}
+.second_row{
+    margin-bottom: 70px;
+}
+.category_text{
+    /* line-height: 200px; */
+    padding-right:20px;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+.category_text1{
+    /* margin: 30px 0px 10px 0px; */
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.category_text2{
+    margin: 20px 0px 10px 0px;
+}
+.category_img{
+    height:100%;
+}
+.categories_btn{
+    background-color: #d4d2d3;
+    padding: 15px;
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.categories_btn a{
+    text-decoration: none;
+    color: black;
+}
+.categories_btn a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/* features */
+.features{
+    background-color:#ffcaff;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.feature{
+    background-color:#d18ad1;
+    display: inline-block;
+    width: 22%;
+}
+.feature_icon{
+    margin: 20px;
+}
+.feature_text{
+    color: white;
+    font-size: 29px;
+}
+
+/* map */
+.map_section{
+    margin: 50px 10px 50px 10px;
+}
+.map_section.txt{
+	padding: 10px;
+    color: #000000c7 !important;
+    line-height: 26px;
+    font-size: 50px;
+}
+.map_section .row{
+	display: flex;
+}
+.map_section .col1{
+	padding: 80px;
+}
+
+.map{
+    position: absolute;
+    left: 400px;
+    top: 150px;
+}
+
+.JandK{
+    position: absolute;
+    left: 570px;
+    top: 220px;
+}
+
+.Himachal{
+    position: absolute;
+    left: 580px;
+    top: 250px;
+}
+
+.Punjab{
+    position: absolute;
+    left: 555px;
+    top: 255px;
+}
+
+.Uttarakhand{
+    position: absolute;
+    left: 600px;
+    top: 270px;
+}
+
+.Haryana{
+    position: absolute;
+    left: 568px;
+    top: 295px;
+}
+
+.Rajasthan{
+    position: absolute;
+    left: 525px;
+    top: 320px;
+}
+
+.UP{
+    position: absolute;
+    left: 620px;
+    top: 330px;
+}
+
+.MP{
+    position: absolute;
+    left: 590px;
+    top: 390px;
+}
+
+.Gujarat{
+    position: absolute;
+    left: 500px;
+    top: 370px;
+}
+
+.Chhattisgarh{
+    position: absolute;
+    left: 640px;
+    top: 415px;
+}
+
+.Orissa{
+    position: absolute;
+    left: 680px;
+    top: 405px;
+}
+
+.Telangana{
+    position: absolute;
+    left: 600px;
+    top: 445px;
+}
+
+.MH{
+    position: absolute;
+    left: 550px;
+    top: 445px;
+}
+
+.Karnataka{
+    position: absolute;
+    left: 550px;
+    top: 495px;
+}
+
+.AP{
+    position: absolute;
+    left: 600px;
+    top: 490px;
+}
+
+.Kerela{
+    position: absolute;
+    left: 565px;
+    top: 580px;
+}
+
+.TN{
+    position: absolute;
+    left: 600px;
+    top: 545px;
+}
+
+.Bihar{
+    position: absolute;
+    left: 690px;
+    top: 333px;
+}
+
+.Jharkhand{
+    position: absolute;
+    left: 685px;
+    top: 380px;
+}
+
+.WB{
+    position: absolute;
+    left: 720px;
+    top: 390px;
+}
+
+.Manipur{
+    position: absolute;
+    left: 795px;
+    top: 350px;
+}
+
+.Arunachal{
+    position: absolute;
+    left: 785px;
+    top: 300px;
+}
+
+.Assam{
+    position: absolute;
+    left: 755px;
+    top: 325px;
+}
+
+.Delhi{
+    position: absolute;
+    left: 603px;
+    top: 297px;
+}
+
+.Goa{
+    position: absolute;
+    left: 500px;
+    top: 500px;
+}
+
+.Meghalaya{
+    position: absolute;
+    left: 750px;
+    top: 350px;
+}
+
+.Sikkim{
+    position: absolute;
+    left: 740px;
+    top: 300px;
+}
+
+.Mizoram{
+    position: absolute;
+    left: 800px;
+    top: 390px;
+}
+
+.Nagaland{
+    position: absolute;
+    left: 800px;
+    top: 325px;
+}
+
+.Tripura{
+    position: absolute;
+    left: 750px;
+    top: 380px;
+}
+
+.pb{
+    position: absolute;
+    top: 150px;
+}
+
+.pb_videos{
+    position: absolute;
+    top: 210px;
+    left: 600px;
+}
+
+.whole_map{
+    position: absolute;
+    left: 550px;
+    top: 1597px;
+}
+
+/* footer */
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #464647;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_text{
+    color: white;
+    font-size: 45px;
+    margin: 50px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.quick-links{
+    color: white;
+}
+.quick-links>p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.quick-links>a{
+    text-decoration: none;
+    color: white;
+}
+.quick-links>a:hover{
+    text-decoration: none;
+    color: white;
+}
+.contact{
+    color: white;
+}
+.contact>p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.contact-email:hover{
+    cursor: pointer;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-size: cover;
+}
+.social-icon:hover{
+    cursor: pointer;
+}
+.si1 {
+    background-image: url('./images/facebook.png');
+}
+
+.si2 {
+    background-image: url('./images/google\ plus.png');
+}
+
+.si3 {
+    background-image: url('./images/linkedin.png');
+}
+
+.si4 {
+    background-image: url('./images/instagram.png');
+}
